@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Бинго</title>
+    <style>
+        body {
+            background-color: #90a8f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bingo {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            width: 600px;
+            height: 600px;
+            border: 3px solid #ffffff;
+            background-color: white;
+        }
+
+        .cell {
+            border: 1px solid #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .cell:hover {
+            background-color: #e3f2fd;
+            transform: scale(1.05);
+        }
+
+        .cell img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 5px;
+        }
+
+        .cell:nth-child(odd) {
+            background-color: #e8f0f5;
+        }
+
+        .cell:nth-child(even) {
+            background-color: #e3e8fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="bingo">
+        <div class="cell">🎮 </div>
+        <div class="cell">🐱 </div>
+        <div class="cell">🍀 </div>
+        <div class="cell">🌟 </div>
+        <div class="cell">🎵 </div>
+        <div class="cell">📚 </div>
+        
+        <div class="cell">☀️ </div>
+        <div class="cell">🌙 </div>
+        <div class="cell">🌈 </div>
+        <div class="cell">⚡ </div>
+        <div class="cell">🔥 </div>
+        <div class="cell">💧 </div>
+        
+        <div class="cell">🍕 </div>
+        <div class="cell">🍎 </div>
+        <div class="cell">🍰 </div>
+        <div class="cell">☕ </div>
+        <div class="cell">🍦 </div>
+        <div class="cell">🍔 </div>
+        
+        <div class="cell">⚽ </div>
+        <div class="cell">🏀 </div>
+        <div class="cell">🎾 </div>
+        <div class="cell">🏊 </div>
+        <div class="cell">🚴 </div>
+        <div class="cell">🏃 </div>
+        
+        <div class="cell">💻 </div>
+        <div class="cell">📱 </div>
+        <div class="cell">🎧 </div>
+        <div class="cell">📷 </div>
+        <div class="cell">🕹️ </div>
+        <div class="cell">💡 </div>
+        
+        <div class="cell">🚗 </div>
+        <div class="cell">✈️ </div>
+        <div class="cell">🚀 </div>
+        <div class="cell">🚲 </div>
+        <div class="cell">🚂 </div>
+        <div class="cell">🚢 </div>
+    </div>
+</body>
+</html>
