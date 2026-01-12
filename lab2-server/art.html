@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Рисунок - Смайлик</title>
+    <style>
+        body {
+            background-color: #e6f7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .smiley {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .face {
+            width: 200px;
+            height: 200px;
+            background-color: #ffeb3b;
+            border-radius: 50%;
+            border: 5px solid #ffc107;
+            position: relative;
+        }
+
+        .eye {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            top: 50px;
+        }
+
+        .eye.left {
+            left: 45px;
+        }
+
+        .eye.right {
+            right: 45px;
+        }
+
+        .eye::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: white;
+            border-radius: 50%;
+            top: 8px;
+            left: 5px;
+        }
+
+        .mouth {
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 0 0 50px 50px;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tongue {
+            position: absolute;
+            width: 70px;
+            height: 20px;
+            background-color: #e91e63;
+            border-radius: 0 0 20px 20px;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .blush {
+            position: absolute;
+            width: 25px;
+            height: 15px;
+            background-color: #ff9999;
+            border-radius: 50%;
+            top: 80px;
+            opacity: 0.7;
+        }
+
+        .blush.left {
+            left: 15px;
+        }
+
+        .blush.right {
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="smiley">
+        <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="blush left"></div>
+            <div class="blush right"></div>
+            <div class="mouth">
+                <div class="tongue"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
